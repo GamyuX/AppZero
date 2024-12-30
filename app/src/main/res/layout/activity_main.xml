@@ -7,51 +7,58 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edit_real"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="80dp"
+        android:text="conversor de moeda"
         android:gravity="center"
-        android:hint="insira um valor em real"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edit_euro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="insira um valor em Euro"
         android:inputType="number|numberDecimal|numberSigned" />
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        android:id="@+id/button_converter"
-        android:text="Converter"
-        android:textSize="25sp"/>
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/button_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolar"
+            android:textSize="25sp"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_peso"
+            android:text="Peso"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text_dolar"
-        android:textSize="50sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="desenvolvido por Gabriel "
+        android:textSize="20sp" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <RadioButton
-            android:id="@+id/radioButtonD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dolar" />
-
-        <RadioButton
-            android:id="@+id/radioButtonY"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yen" />
-
-        <RadioButton
-            android:id="@+id/radioButtonE"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Euro" />
-    </RadioGroup>
 </LinearLayout>
