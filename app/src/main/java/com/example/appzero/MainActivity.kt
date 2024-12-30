@@ -1,5 +1,4 @@
 package com.example.appzero
-
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
